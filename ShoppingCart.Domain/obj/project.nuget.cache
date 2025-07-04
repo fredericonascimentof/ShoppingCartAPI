@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "PGK8T33MU5w=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\FTI\\Desktop\\ShoppingCart.API\\ShoppingCart.Domain\\ShoppingCart.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\FTI\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\FTI\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\FTI\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.12\\microsoft.windowsdesktop.app.ref.8.0.12.nupkg.sha512",
+    "C:\\Users\\FTI\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.12\\microsoft.netcore.app.ref.8.0.12.nupkg.sha512",
+    "C:\\Users\\FTI\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.12\\microsoft.aspnetcore.app.ref.8.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

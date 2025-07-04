@@ -1,0 +1,12 @@
+C:\Users\FTI\Desktop\ShoppingCart.API\ShoppingCart.Domain\bin\Debug\net8.0\ShoppingCart.Domain.deps.json
+C:\Users\FTI\Desktop\ShoppingCart.API\ShoppingCart.Domain\bin\Debug\net8.0\ShoppingCart.Domain.dll
+C:\Users\FTI\Desktop\ShoppingCart.API\ShoppingCart.Domain\bin\Debug\net8.0\ShoppingCart.Domain.pdb
+C:\Users\FTI\Desktop\ShoppingCart.API\ShoppingCart.Domain\obj\Debug\net8.0\ShoppingCart.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FTI\Desktop\ShoppingCart.API\ShoppingCart.Domain\obj\Debug\net8.0\ShoppingCart.Domain.AssemblyInfoInputs.cache
+C:\Users\FTI\Desktop\ShoppingCart.API\ShoppingCart.Domain\obj\Debug\net8.0\ShoppingCart.Domain.AssemblyInfo.cs
+C:\Users\FTI\Desktop\ShoppingCart.API\ShoppingCart.Domain\obj\Debug\net8.0\ShoppingCart.Domain.csproj.CoreCompileInputs.cache
+C:\Users\FTI\Desktop\ShoppingCart.API\ShoppingCart.Domain\obj\Debug\net8.0\ShoppingCart.Domain.dll
+C:\Users\FTI\Desktop\ShoppingCart.API\ShoppingCart.Domain\obj\Debug\net8.0\refint\ShoppingCart.Domain.dll
+C:\Users\FTI\Desktop\ShoppingCart.API\ShoppingCart.Domain\obj\Debug\net8.0\ShoppingCart.Domain.pdb
+C:\Users\FTI\Desktop\ShoppingCart.API\ShoppingCart.Domain\obj\Debug\net8.0\ref\ShoppingCart.Domain.dll
+C:\Users\FTI\Desktop\ShoppingCart.API\ShoppingCart.Domain\obj\Debug\net8.0\ShoppingCart.Domain.csproj.AssemblyReference.cache
