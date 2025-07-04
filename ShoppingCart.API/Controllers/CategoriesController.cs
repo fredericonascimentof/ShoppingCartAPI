@@ -20,7 +20,6 @@ namespace ShoppingCart.API.Controllers
             _ctx = ctx;
         }
 
-        // 1. POST /api/categories
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateCategoryDto dto)
         {

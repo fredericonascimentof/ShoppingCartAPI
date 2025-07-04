@@ -26,14 +26,14 @@ public class ProductsController : ControllerBase
         return CreatedAtAction(nameof(GetById), new { id = prod.Id }, prod);
     }
 
-    [HttpGet("/api/products[?categoryId=...]")]
+    [HttpGet("/api/products")]
     public async Task<IActionResult> GetAll([FromQuery] Guid? categoryId)
     {
         var list = await _svc.GetAllAsync(categoryId);
         return Ok(list);
     }
 
-    [HttpGet("/products[?categoryId=...]")]
+    [HttpGet("/products")]
     public async Task<IActionResult> GetById(Guid id)
     {
         var prod = await _svc.GetByIdAsync(id);
