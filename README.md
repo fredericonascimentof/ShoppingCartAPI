@@ -30,4 +30,4 @@ Este projeto foi desenvolvido como parte de um desafio técnico.
 1. Clone o repositório:
    ```bash
    git clone [https://github.com/fredericonascimentof/ShoppingCartAPI.git]
-   cd ShoppingCartAPI
+
