@@ -25,6 +25,8 @@ namespace ShoppingCart.Domain.Entities
             Quantity = quantity;
             UnitPrice = unitPrice;
         }
+
+        public CartItem() { }
     }
 
 }

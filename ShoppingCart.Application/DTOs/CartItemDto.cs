@@ -2,11 +2,14 @@
 
 namespace ShoppingCart.Application.DTOs
 {
-    public record CartItemDto(
-        Guid ItemId,
-        Guid ProductId,
-        int Quantity,
-        decimal UnitPrice,
-        decimal Subtotal
-    );
+    public class CartItemDto
+    {
+        public Guid ProductId { get; set; }
+        public int Quantity { get; set; }
+        public decimal UnitPrice { get; set; }
+        public decimal Subtotal { get; set; }
+
+        public CartItemDto() {}
+
+    }
 }

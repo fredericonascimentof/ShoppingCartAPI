@@ -71,6 +71,8 @@ namespace ShoppingCart.Tests.Services.CartTests
             var prod = new Product("P", Guid.NewGuid(), 10m, null, 1);
             _mockProductRepo.Setup(r => r.GetByIdAsync(prod.Id))
                             .ReturnsAsync(prod);
+            _mockCartRepo.Setup(r => r.GetCartWithItemsAsync(It.IsAny<Guid>()))
+                            .ReturnsAsync(new Cart());
 
             // Act & Assert
             await Assert.ThrowsAsync<InvalidOperationException>(() =>
@@ -90,7 +92,7 @@ namespace ShoppingCart.Tests.Services.CartTests
             _mockCartRepo.Setup(r => r.AddOrUpdateItemAsync(cartId, It.IsAny<CartItem>()))
                          .Returns(Task.CompletedTask);
 
-            var cart = new Cart();
+            var cart = new Cart(cartId);
             var item = new CartItem(cartId, prod.Id, 2, prod.PromotionalPrice.Value);
             cart.Items.Add(item);
 
@@ -127,7 +129,7 @@ namespace ShoppingCart.Tests.Services.CartTests
         {
             // Arrange: carrinho com um item
             var cartId = Guid.NewGuid();
-            var cart = new Cart();
+            var cart = new Cart(cartId);
             cart.Items.Add(new CartItem(cartId, Guid.NewGuid(), 3, 5m));
 
             _mockCartRepo.Setup(r => r.GetCartWithItemsAsync(cartId))

@@ -18,7 +18,7 @@ public class ProductsController : ControllerBase
         _ctx = ctx;
     }
 
-    [HttpPost("/api/products")]
+    [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateProductDto dto)
     {
         var prod = await _svc.CreateAsync(dto);
@@ -26,21 +26,21 @@ public class ProductsController : ControllerBase
         return CreatedAtAction(nameof(GetById), new { id = prod.Id }, prod);
     }
 
-    [HttpGet("/api/products")]
+    [HttpGet]
     public async Task<IActionResult> GetAll([FromQuery] Guid? categoryId)
     {
         var list = await _svc.GetAllAsync(categoryId);
         return Ok(list);
     }
 
-    [HttpGet("/products")]
+    [HttpGet("{id}")]
     public async Task<IActionResult> GetById(Guid id)
     {
         var prod = await _svc.GetByIdAsync(id);
         return prod is null ? NotFound() : Ok(prod);
     }
 
-    [HttpPut("/api/products/{id}")]
+    [HttpPut("{id}")]
     public async Task<IActionResult> Update(Guid id, [FromBody] UpdateProductDto dto)
     {
         var ok = await _svc.UpdateAsync(id, dto);
@@ -49,7 +49,7 @@ public class ProductsController : ControllerBase
         return NoContent();
     }
 
-    [HttpDelete("/api/products/{id}")]
+    [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(Guid id)
     {
         var ok = await _svc.SoftDeleteAsync(id);

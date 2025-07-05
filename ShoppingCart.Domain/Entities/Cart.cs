@@ -16,6 +16,11 @@ namespace ShoppingCart.Domain.Entities
             Items = new List<CartItem>();
         }
 
+        public Cart(Guid id)
+        {
+            Id = id;
+        }
+
         public void AddItem(CartItem item)
         {
             Items.Add(item);
