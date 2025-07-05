@@ -1,0 +1,354 @@
+{
+	"info": {
+		"_postman_id": "205c316d-a0e6-41e3-86ce-efabec8c0c5c",
+		"name": "ShoppingCartApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46486928"
+	},
+	"item": [
+		{
+			"name": "Carts",
+			"item": [
+				{
+					"name": "Criar Carrinho",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7078/api/Carts",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7078",
+							"path": [
+								"api",
+								"Carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Produtos no Carrinho",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"productId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"quantity\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7078/api/Carts/{id}/items",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7078",
+							"path": [
+								"api",
+								"Carts",
+								"{id}",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Itens no Carrinho",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7078/api/Carts/{cartId}/items",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7078",
+							"path": [
+								"api",
+								"Carts",
+								"{cartId}",
+								"items"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Registrar Categoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Utilitários\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7078/api/Categories",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7078",
+							"path": [
+								"api",
+								"Categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Categorias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7078/api/Categories",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7078",
+							"path": [
+								"api",
+								"Categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Categoria Por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7078/api/Categories/{id}",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7078",
+							"path": [
+								"api",
+								"Categories",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Categoria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Categoria Atualizada\",\r\n  \"description\": \"Nova descrição para a categoria\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7078/api/Categories/{id}",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7078",
+							"path": [
+								"api",
+								"Categories",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7078/api/Categories/{id}",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7078",
+							"path": [
+								"api",
+								"Categories",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Registrar Produto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Lampada\",\r\n  \"categoryId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"price\": 9.67,\r\n  \"promotionalPrice\": 0,\r\n  \"stockQuantity\": 13\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7078/api/products",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7078",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Produtos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Lampada\",\r\n  \"categoryId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"price\": 9.67,\r\n  \"promotionalPrice\": 0,\r\n  \"stockQuantity\": 13\r\n}"
+						},
+						"url": {
+							"raw": "https://localhost:7078/api/products",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7078",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Produto Por Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\"ec3c6714-8bbf-4d04-8396-943fb3a85d32\""
+						},
+						"url": {
+							"raw": "https://localhost:7078/products",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7078",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Produto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"string\",\r\n    \"categoryId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"price\": 4666.5,\r\n    \"promotionalPrice\": 0.0,\r\n    \"stockQuantity\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7078/products/{id}",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7078",
+							"path": [
+								"products",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Produto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://localhost:7078/products/{id}",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7078",
+							"path": [
+								"products",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
