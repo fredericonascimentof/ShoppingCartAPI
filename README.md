@@ -25,6 +25,23 @@ Este projeto foi desenvolvido como parte de um desafio técnico.
 
 ---
 
+## 🧪 Testes Automatizados
+
+Durante o desenvolvimento do projeto, foram implementados testes unitários utilizando **xUnit** e **Moq** para validar a lógica da API.
+Porém, enfrentei dificuldades técnicas para concluir todos os testes, principalmente pela minha falta de experiência prévia com testes automatizados em .NET.
+Alguns testes não foram concluídos ou apresentaram falhas, e por isso optei por focar na implementação funcional da API para garantir as funcionalidades principais.
+Continuarei estudando e aprimorando a parte de testes para projetos futuros.
+
+---
+
+## 📂 Estrutura do Projeto
+
+- **ShoppingCart.Domain**: Entidades e regras de negócio.
+- **ShoppingCart.Application**: Serviços e lógica da aplicação.
+- **ShoppingCart.Infrastructure**: Implementação dos repositórios.
+- **ShoppingCart.API**: Camada API RESTful.
+- **ShoppingCart.Tests**: Projetos de testes unitários.
+
 ## 🚀 Como executar
 
 1. Clone o repositório:
