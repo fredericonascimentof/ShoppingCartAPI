@@ -15,4 +15,4 @@ Os testes manuais confirmaram que a API está funcional e executando corretament
 
 Apesar da tentativa de implementar testes automatizados com **xUnit** e **Moq**, não foi possível finalizá-los com sucesso devido a limitações técnicas e à minha falta de experiência prévia com testes em .NET. 
 
-No entanto, a estrutura de testes já foi iniciada no projeto, e há intenção de evoluir essa parte futuramente com mais domínio sobre os recursos da plataforma.
+No entanto, a estrutura de testes já foi iniciada no projeto.
